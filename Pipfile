@@ -11,6 +11,7 @@ flask-migrate = "*"
 flask-bcrypt = "*"
 flask-sqlalchemy = "*"
 python-dotenv = "*"
+flask-jwt-extended = "*"
 
 [dev-packages]
 
