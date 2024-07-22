@@ -43,12 +43,9 @@ class Login(Resource):
 
 class Vehicles(Resource):
     def get(self):
-        vehicles = []
-        for vehicle in Vehicle.query.all():
-            response_dict = vehicle.to_dict()
-            vehicles.append(response_dict)
-            response = make_response(vehicles, 200)
-        return response
+        vehicles = Vehicle.query.all()
+        vehicles = [vehicle.to_dict() for vehicle in vehicles]
+        return vehicles
     
     def post(self):
         
