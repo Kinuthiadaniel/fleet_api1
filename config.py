@@ -9,7 +9,7 @@ from flask import Flask
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import MetaData
-from sqlalchemy_serializer import SerializerMixin
+
 from flask_restful import Api,Resource
 from flask import request, session,make_response, jsonify
 from flask_bcrypt import Bcrypt
