@@ -11,6 +11,7 @@ flask-restful = "*"
 python-dotenv = "*"
 gunicorn = "*"
 flask-migrate = "*"
+flask-serializer = "*"
 
 [dev-packages]
 
