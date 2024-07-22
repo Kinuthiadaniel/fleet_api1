@@ -13,6 +13,9 @@ flask-sqlalchemy = "*"
 python-dotenv = "*"
 flask-jwt-extended = "*"
 sqlalchemy-serializer = "*"
+psycopg2 = "*"
+flask = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
