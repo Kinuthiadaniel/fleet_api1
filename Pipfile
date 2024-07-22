@@ -5,6 +5,13 @@ name = "pypi"
 
 [packages]
 python-dotenv = "*"
+flask = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+sqlalchemy-serializer = "*"
+flask-restful = "*"
 
 [dev-packages]
 
