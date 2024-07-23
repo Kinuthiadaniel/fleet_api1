@@ -35,7 +35,7 @@ class Login(Resource):
 
 
         if user and bcrypt.check_password_hash(user.password, password):
-            access_token = create_access_token(identity=user.id)
+            access_token = create_access_token(identity=user)
             return {"access_token": access_token}, 200
         else:
             return {"message": "Invalid email or password"}, 401
