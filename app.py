@@ -115,10 +115,10 @@ class Trips(Resource):
     def post(self):
         data = request.get_json()
         new_trip = Trip(
-           user_id = data['user_id'],
-           vehicle_id = data['vehicle_id'],
-           destination = data['destination'],
-           date = data['date']
+           user_id = data.get('user_id'),
+           vehicle_id = data.get('vehicle_id'),
+           destination = data.get('destination'),
+           date = data.get('date')
         )
         db.session.add(new_trip)
         db.session.commit()
