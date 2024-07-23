@@ -118,7 +118,7 @@ class Trips(Resource):
            user_id = data['user_id'],
            vehicle_id = data['vehicle_id'],
            destination = data['destination'],
-           date = data['date'] 
+           date = data['date']
         )
         db.session.add(new_trip)
         db.session.commit()
