@@ -48,10 +48,10 @@ class Vehicles(Resource):
         return vehicles
     
     def post(self):
-        
+        data = request.get_json()
         new_vehicle = Vehicle(
-            vin = request.form.get('vin'),
-            make = request.form.get('make')
+            vin = data.get('vin'),
+            make = data.get('make')
         )
         db.session.add(new_vehicle)
         db.session.commit()
